@@ -1,0 +1,229 @@
+:root{
+    --Purple-100: #dacffc;
+    --Purple-500: #7650dc;
+    --Yellow-100: #f9eee1;
+    --Yellow-500: #ffcb6b;
+    --White: #ffffff;
+    --Black: #121212;
+}
+@font-face {
+    font-family: DMSans-italic;
+    src: url(../assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: DMSans;
+    src: url(../assets/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+.overall-bg{
+    background-color: #f8f4f4;
+    height: 100%;
+}
+*{
+margin: 0;
+padding: 0;
+font-family: DMSans;
+color: var(--Black);}
+h3,h2{padding: 0; width: fit-content;font-weight: 500 !important; }
+p{
+    font-size: 18px;
+}
+.box{
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    
+}
+.slant{
+    font-family: DMSans-italic;
+    font-weight: 600;
+}
+.attribution 
+{ 
+    font-size: 11px; 
+    text-align: center;
+    position: relative;
+    bottom: 0;
+ }
+.attribution a 
+{ 
+    color: #3e52a3; 
+}
+.gold-txt{
+    color: var(--Yellow-500);
+}
+.box-1{
+background-color: var(--Yellow-100);
+padding: 3rem 2rem;
+margin-bottom: 2rem;
+height: 24.5rem;
+}
+.box-1 .slant{
+    color: var(--Purple-500);
+}
+.box-2{
+    background-color: var(--Purple-500);
+    text-align: center;
+    color: var(--White);
+    align-content: center;
+    padding: 3rem 3rem;
+    
+}
+.box-2 h1{
+    font-size: 3em;
+}
+.middle-column-lg .row{
+    margin-top: 2.1rem
+}
+.box-3{
+    background-color: var(--Purple-100);
+    padding: 3rem 2rem 1rem 2rem;
+    overflow-x: hidden;
+}
+.box-3 p, .box-7 p{
+    font-weight: 500;
+}
+.box-4{
+    padding: 3rem 2rem;
+    background-color: var(--Yellow-500);
+    height: calc(390px + 2%)
+}
+.box-5{
+    background: var(--White);
+    overflow: hidden;
+    padding: 1.5rem;
+    margin-right: 0.5rem;
+}
+.box-6{
+    background: var(--Yellow-500);
+    overflow-y: hidden;
+    padding: 1.5rem;
+}
+.box-7{
+    background-color: var(--White);
+    padding: 1.4rem 1.5rem;
+}
+.box-7 h1{
+    font-weight: 600;
+}
+.box-7 p{
+    padding-bottom: 1rem;
+}
+.box-8{
+    background-color: var(--Purple-500);
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+    color: var(--White);
+}
+.box-8 h2{
+    font-weight: 500 !important;
+    padding: 2rem 0.8rem 0 1rem;
+    font-size: 35px;
+    line-height: 38px;
+}
+@media screen and (max-width: 500px){
+   
+    .box-1{
+        height: fit-content    
+    }
+    .box-3, .box-8{
+        align-content: center;
+        text-align: center;
+    }
+    .box-3 h3{ 
+        width: 20rem;
+    margin-left: -5%;}
+
+    .box-3 img{
+        width:300px;
+    
+    }
+    .box-4 h2{
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .box-6{
+       margin: 1.5rem 0;
+        padding: 1.5rem;
+        
+    } 
+    
+}
+@media screen and (min-width:728px){
+    .box-1{
+        height: fit-content    
+    }
+    .box-3{
+        height: fit-content;
+    }
+    .box-3 img{
+        width:300px;            
+    }
+    .box-4{
+        text-align: center;
+        align-content: center;
+    }
+    .box-4 img{
+        width: 40%;
+    }
+    .box-5{
+        background: var(--White);
+        overflow-x: hidden;
+        padding: 1.55rem;
+        margin-right: 0rem;
+    }
+    .box-6{
+        height: 250px;
+        overflow: hidden;
+    }
+    .box-8{
+        padding: 2rem 0 1.5rem 1.3rem;
+    }
+    .box-8 h2{
+        padding: 0;
+        margin-top: 1.5rem;
+        font-size: 35px;
+        line-height: 38px;
+    }
+
+    
+}
+@media screen and (min-width: 1100px){
+
+    .box-1{
+        padding: 3rem 2rem;
+        margin-bottom: 2rem;
+        height: 24.5rem;
+        }
+    .box-3 img{
+        width:calc(100% + 82%);
+        height: 320px;
+    }
+    .box-5{
+        background: var(--White);
+        overflow-x: hidden;
+        padding: 1.55rem;
+        margin-right: 0rem;
+        height: calc(223px + 10%);
+    }
+    .box-6{
+        background: var(--Yellow-500);
+        overflow-y: hidden;
+        padding: 1.5rem;
+        height: 253px;
+    } 
+    .box-8{
+        padding:1.2rem 0;
+        color: var(--White);
+    }
+    .box-8 img{
+        margin-left: 1.5rem;
+    }
+    .box-8 h2{
+        font-weight: 500 !important;
+        margin-left: 0.5rem;
+        font-size: 35px;
+        line-height: 38px;
+    }
+    
+}
